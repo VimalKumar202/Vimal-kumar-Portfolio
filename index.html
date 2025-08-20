@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
 
 
@@ -18,11 +20,14 @@
     <!-- Header -->
     <header class="header">
         <div class="logo">Portfolio</div>
+
+        <!-- Hamburger -->
         <div class="menu-toggle" id="menu-toggle">
             <i class="fas fa-bars"></i>
         </div>
 
-        <nav class="navbar">
+        <!-- Navigation -->
+        <nav class="navbar" id="navbar">
             <ul>
                 <li><a href="#objective-profile">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -34,6 +39,7 @@
         </nav>
     </header>
 
+
     <!-- Hero Section -->
     <section class="hero">
         <h1>Vimal Kumar: Driving Innovation</h1>
@@ -43,6 +49,15 @@
             <a href="#contact" class="btn">Contact Me</a>
             <a href="Vimal Kumar Resume.pdf" download class="download-btn">Resume</a>
         </div>
+        <div class="hero-socials">
+            <a href="https://www.linkedin.com/in/vimal-kumar-b69731253/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/VimalKumar202" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+
     </section>
 
     <!-- Sections -->
@@ -152,70 +167,110 @@
         </div>
     </section>
     <!-- Featured Projects Section -->
+    <!-- Featured Projects Section -->
     <section id="project" class="projects-section">
         <h2>Featured Projects</h2>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="Web">Web</button>
+            <button class="filter-btn" data-filter="game">Games</button>
+            <button class="filter-btn" data-filter="freelance">Freelance</button>
+            
+        </div>
 
         <div class="project-cards">
             <!-- Project 1 -->
-            <div class="project-card">
+            <div class="project-card" data-category="Web">
+                <img src="../Portfolio vimal/Images/1.PNG" alt="Currency Exchange Project" class="project-img">
                 <h3>Currency-Exchange</h3>
-                <p>A simple and interactive web application that allows users to convert currency rates in real-time with country flags using the FreeCurrencyAPI.</p>
+                <p>A simple and interactive web application that allows users to convert currency rates in real-time
+                    with country flags using the FreeCurrencyAPI.</p>
                 <p><strong>Tech Stacks:</strong> HTML, CSS, JavaScript</p>
                 <a href="https://github.com/VimalKumar202/Currency-Exchange.git" target="_blank"
                     class="github-link">GitHub Link</a>
-                     <br>
-                <a href="https://currency-exchange12.netlify.app/"target="_blank"
-                    class="github-link">Visit website</a>    
+                <br>
+                <a href="https://currency-exchange12.netlify.app/" target="_blank" class="github-link">Visit website</a>
             </div>
 
             <!-- Project 2 -->
-            <div class="project-card">
-                <h3>Fitness Tracker Websites</h3>
+            <div class="project-card" data-category="Web">
+                <img src="../Portfolio vimal/Images/4.PNG" alt="Fitness Tracker" class="project-img">
+                <h3>Fitness Tracker Website</h3>
                 <p>A static site to help users track fitness progress, highlighting the importance of fitness with
                     simple metrics and UI.</p>
                 <p><strong>Tech Stacks:</strong> HTML, CSS</p>
                 <a href="https://github.com/VimalKumar202/Fitness-tracker-website.git" target="_blank"
                     class="github-link">GitHub Link</a>
-                 <br>
-                <a href="https://fitness-tracker-website20.netlify.app/"target="_blank"
-                    class="github-link">Visit website</a>    
+                <br>
+                <a href="https://fitness-tracker-website20.netlify.app/" target="_blank" class="github-link">Visit
+                    website</a>
             </div>
+
             <!-- Project 3 -->
-            <div class="project-card">
+            <div class="project-card" data-category="game">
+                <img src="../Portfolio vimal/Images/5.PNG" alt="Think Guess Game" class="project-img">
                 <h3>Think-Guess-Game</h3>
-                <p>A fun guessing game where you have to think smartly and guess the hidden number with helpful clues along the way</p>
+                <p>A fun guessing game where you have to think smartly and guess the hidden number with helpful clues
+                    along the way.</p>
                 <p><strong>Tech Stacks:</strong> HTML, CSS, JavaScript</p>
                 <a href="https://github.com/VimalKumar202/Think-Guess-Game.git" target="_blank"
                     class="github-link">GitHub Link</a>
-                     <br>
-                <a href="https://think-guess-game.netlify.a"target="_blank"
-                    class="github-link">Visit website</a>    
+                <br>
+                <a href="https://think-guess-game.netlify.app" target="_blank" class="github-link">Visit website</a>
             </div>
-             <!-- Project 4 -->
-            <div class="project-card">
-                <h3>Portfolio website</h3>
-                <p>Welcome to my portfolio! I'm Vimal Kumar, an aspiring Cybersecurity enthusiast, Developer, and Innovator.</p>
+
+            <!-- Project 4 -->
+            <div class="project-card" data-category="Web">
+                <img src="../Portfolio vimal/Images/Capture8.PNG" alt="Portfolio Website" class="project-img">
+                <h3>Portfolio Website</h3>
+                <p>Welcome to my portfolio! I'm Vimal Kumar, an aspiring Cybersecurity enthusiast, Developer, and
+                    Innovator.</p>
                 <p><strong>Tech Stacks:</strong> HTML, CSS, JavaScript</p>
                 <a href="https://github.com/VimalKumar202/Vimal-kumar-Portfolio.git" target="_blank"
                     class="github-link">GitHub Link</a>
-                     <br>
-                <a href="https://silver-brioche-1d5882.netlify.app/"target="_blank"
-                    class="github-link">Visit website</a>    
+                <br>
+                <a href="https://silver-brioche-1d5882.netlify.app/" target="_blank" class="github-link">Visit
+                    website</a>
             </div>
-            <!-- Project 4 -->
-            <div class="project-card">
+
+            <!-- Project 5 -->
+            <div class="project-card" data-category="Web">
+                <img src="../Portfolio vimal/Images/y.PNG" alt="Phishing Detection" class="project-img">
                 <h3>Phishing Detection Project</h3>
                 <p>Developed a machine learning-based web application to identify phishing websites by examining URL
                     patterns and extracting clever features.</p>
-                <p><strong>Tech Stacks:</strong> Python, Streamlit, Scikit-learn, Pandas, Regex, WHOIS, Requests, Joblib.</p>
-                <a href="https://github.com/VimalKumar202/Vimal-kumar-Portfolio.git" target="_blank"
+                <p><strong>Tech Stacks:</strong> Python, Streamlit, Scikit-learn, Pandas, Regex, WHOIS, Requests,
+                    Joblib.</p>
+                <a href="https://github.com/VimalKumar202/Phishing-Detection.git" target="_blank"
                     class="github-link">GitHub Link</a>
-                     <br>  
+            </div>
+
+            <!-- Freelancing Project 1 -->
+            <div class="project-card" data-category="freelance">
+                <img src="../Portfolio vimal/Images/Up.PNG" alt="Freelance Project 1" class="project-img">
+                <h3>Freelancing Project 1 : Uplinkbharat</h3>
+                <p>Developed a professional business website for a client with responsive design with smooth animations.</p>
+                    
+                <p><strong>Tech Stacks:</strong> HTML, CSS, JavaScript, MySql, php, </p>
+                <br>
+                <a href="https://uplinkbharat.com/" target="_blank" class="github-link">Visit website</a>
+            </div>
+
+            <!-- Freelancing Project 2 -->
+            <div class="project-card" data-category="freelance">
+                <img src="../Portfolio vimal/Images/Mi.PNG" alt="Freelance Project 2" class="project-img">
+                <h3>Freelancing Project 2 : MIBU</h3>
+                <p>Created a dynamic e-commerce site. </p>
+                  
+                <p><strong>Tech Stacks:</strong>HTML, CSS, JavaScript, MySql, php, </p>
+               
+                <br>
+                <a href="https://mibu.co.in/" target="_blank" class="github-link">Visit website</a>
             </div>
         </div>
-
-        
     </section>
+
+
     <!--extra-->
     <section id="Beyond Academics" class="attributes-section">
         <h2>Personal Attributes</h2>
@@ -291,7 +346,7 @@
         <p>&copy; 2025 Vimal Kumar. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
